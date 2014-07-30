@@ -1,0 +1,8 @@
+GEM
+  remote: https://rubygem.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
