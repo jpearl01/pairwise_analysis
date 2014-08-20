@@ -69,6 +69,7 @@
 		if list.nil?
 			arr[0].clusters.each_key do |clust|
 				gene_class = sum_cluster(arr, clust)
+				next unless gene_class > 0
 				if histo[gene_class].nil? 
 					histo[gene_class] = 1
 				else
@@ -91,6 +92,7 @@
 				end
 			end
 		end
+		histo.shift
 		histo
 	end
 
